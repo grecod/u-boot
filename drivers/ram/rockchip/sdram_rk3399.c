@@ -2907,7 +2907,7 @@ static int sdram_init(struct dram_info *dram,
 	int channel, ch, rank;
 	u32 tmp, ret;
 
-	debug("Starting SDRAM initialization...\n");
+	debug("Starting SDRAM initialization....\n");
 
 	if ((dramtype == DDR3 && ddr_freq > 933) ||
 	    (dramtype == LPDDR3 && ddr_freq > 933) ||

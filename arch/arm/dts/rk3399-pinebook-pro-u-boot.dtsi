@@ -12,7 +12,7 @@
 	};
 
 	chosen {
-		u-boot,spl-boot-order = "same-as-spl", &sdhci, &spiflash, &sdmmc;
+		u-boot,spl-boot-order = "same-as-spl", &spiflash, &sdhci, &sdmmc;
 	};
 
 	config {
@@ -48,4 +48,8 @@
 
 &vdd_log {
 	regulator-init-microvolt = <950000>;
+};
+
+&pcie0 {
+	u-boot,dm-pre-reloc;
 };
